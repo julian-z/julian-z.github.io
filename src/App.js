@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import selfie from "./IMG_0186.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Julian Zulfikar</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            Hello! If you are reading this, the website is currently under construction.
+            <br></br><br></br>
+            To see my current portfolio (not styled to modern standards), click <a href="https://www.ics.uci.edu/~jzulfika">here</a>!
+            <br></br><br></br>
+            Here is a picture of me at a creek in the beautiful East Bay Area.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <img src={selfie} alt="Picture of Julian" height="400px"/>
     </div>
   );
 }
