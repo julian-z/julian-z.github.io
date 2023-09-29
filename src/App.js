@@ -1,10 +1,10 @@
 import './App.css';
-import selfie from "./IMG_0186.jpg";
+import selfie from "./images/IMG_0186.jpg";
 
 function App() {
   return (
     <div className="App">
-        <h1>Julian Zulfikar</h1>
+        <h1>Julian Zulfikar - Under Construction</h1>
         <p>
             Hello! If you are reading this, the website is currently under construction.
             <br></br><br></br>
