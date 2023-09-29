@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+
+    animation: loadAnim ease 1s;
+}
+
+@keyframes loadAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.Introduction {
+    background-color: white;
+    width: 75vw;
+    padding: 3vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+    border-radius: 0vw 0vw 5vw 5vw;
+    border-color: rgb(79, 9, 58);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: -5px 5px rgb(79, 9, 58);
+}
+
+.Header {
+    background: rgb(0, 187, 252);
+    width: 75vw;
+    padding: 1vh 3vw 1vh 3vw;
+
+    box-shadow: -5px 5px rgb(79, 9, 58);
+    border-radius: 5vw 5vw 0vw 0vw;
+    border-color: rgb(79, 9, 58);
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+
+    text-align: left;
+    color: white;
+    font-weight: 700;
+}
+
+.allText {
+    padding: 2vh;
+    animation: loadAnim ease 1s;
+}
+
+.fullName,
+.nameText,
+.roleText {
+    text-align: right;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 95%
+}
+.nameText {
+    font-size: 2rem;
+}
+.roleText {
+    font-size: 2.5rem;
+}
+
+@keyframes rotateAnim {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+#pic {
+    height: 30vh;
+    border-radius: 100%;
+    border-color: rgb(79, 9, 58);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 0px 1vw rgb(79, 9, 58);
+
+    animation: loadAnim ease 1s;
+    animation: rotateAnim 3s ease-in-out infinite;
+    transition: height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#pic:hover {
+    height: 35vh;
+    box-shadow: 0px 0px 5vw rgb(79, 9, 58);
+}
+
+.Socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+
+    animation: loadAnim ease 1s;
+}
+
+.social {
+    height: 10vh;
+    border-radius: 100%;
+    transition: opacity 0.2s ease-in-out, border-radius 0.5s;
+}
+
+.social:hover {
+    opacity: 0.5;
+    border-radius: 2vw;
+}
+
+/* MOBILE DEVICES */
+@media (max-width: 768px) {
+    .fullName,
+    .nameText,
+    .roleText {
+        text-align: center;
+    }
+    .roleText {
+        font-size: 1.5rem;
+    }
+}
