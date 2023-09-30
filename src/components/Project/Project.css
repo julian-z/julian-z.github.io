@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: normal;
 
-    animation: loadAnim ease 1s;
+    animation: loadAnim ease 2s;
 }
 
 @keyframes loadAnim {
@@ -18,17 +18,16 @@
     }
 }
 
-.About {
+.Project {
     background-color: white;
     width: 75vw;
     padding: 3vw;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 3vh;
+    flex-wrap: nowrap;
 
     border-radius: 0vw 0vw 5vw 5vw;
     border-color: rgb(79, 9, 58);
@@ -37,24 +36,47 @@
     box-shadow: -5px 5px rgb(79, 9, 58);
 }
 
-.summary {
-    text-align: center;
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.bullets {
+    text-align: left;
     font-weight: 500;
     font-size: 1rem;
-
-    animation: loadAnim ease 3s;
 }
 
-.quote {
+.desc {
     text-align: center;
-    font-style: italic;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
-.Header.about {
-    background: rgb(191, 146, 34);
+.preview {
+    width: 30vw;
+
+    animation: rotateAnimProj 5s ease-in-out infinite;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.preview:hover {
+    opacity: 0.5;
+}
+
+.Header.project {
+    background: rgb(191, 58, 34);
     width: 75vw;
     padding: 1vh 3vw 1vh 3vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     box-shadow: -5px 5px rgb(79, 9, 58);
     border-radius: 5vw 5vw 0vw 0vw;
@@ -67,35 +89,26 @@
     font-weight: 700;
 }
 
-@keyframes rotateAnim {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes rotateAnimProj {
     0% {
-        transform: rotate(10deg);
+        transform: rotate(3deg);
     }
     50% {
-        transform: rotate(-10deg);
+        transform: rotate(-3deg);
     }
     100% {
-        transform: rotate(10deg);
+        transform: rotate(3deg);
     }
 }
 
-.tech-stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 1vh;
-}
-
-.tech-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 2vw;
-}
+/* .tech-row.proj {
+    animation: loadAnim ease 1s;
+} */
 
 .tech {
     height: 5vh;
@@ -109,12 +122,27 @@
 
 /* MOBILE DEVICES */
 @media (max-width: 768px) {
-    .quote,
-    .summary {
+    .tech {
+        height: 3vh;
+    }
+    .tech:hover {
+        height: 4vh;
+    }
+
+    .desc,
+    .bullets {
         font-size: 0.75rem;
     }
 
-    .About {
-        gap: 2vh;
+    .preview {
+        width: 50vw;
+    }
+
+    .Project {
+        flex-direction: column;
+    }
+
+    .Header {
+        font-size: 0.75rem;
     }
 }
