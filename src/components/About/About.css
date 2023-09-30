@@ -108,4 +108,8 @@
     .summary {
         font-size: 0.75rem;
     }
+
+    .About {
+        gap: 2vh;
+    }
 }

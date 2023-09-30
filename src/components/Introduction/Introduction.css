@@ -55,7 +55,7 @@
 
 .allText {
     padding: 2vh;
-    animation: loadAnim ease 1s;
+    animation: loadAnim ease 2s;
 }
 
 .fullName,
@@ -110,7 +110,7 @@
     align-content: center;
     gap: 2vw;
 
-    animation: loadAnim ease 2s;
+    animation: loadAnim ease 3s;
 }
 
 .social {
