@@ -7,7 +7,7 @@ import mail from './mail.png';
 function Introduction(props) {
     return (
         <div className="container">
-            <div className="Header">
+            <div className="Header intro">
                 {props.title}
             </div>
             <div className="Introduction">

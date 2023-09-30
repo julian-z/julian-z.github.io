@@ -9,7 +9,70 @@
   justify-content: center;
   align-items: center;
 
+  gap: 5vh;
+
   /* border-color: gray;
   border-width: 10px;
   border-style: solid; */
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+@keyframes loadButtons {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 0.75;
+  }
+}
+
+#prev,
+#next {
+  width: 4vw;
+  border-radius: 1vw;
+  opacity: 0.75;
+
+  animation: loadButtons 3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#next:hover {
+  transform: translateX(10%);
+  opacity: 1;
+}
+
+#prev:hover {
+  transform: translateX(-10%);
+  opacity: 1;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+
+/* MOBILE DEVICES */
+@media (max-width: 768px) {
+  #prev,
+  #next {
+    width: 6vw;
+  }
 }

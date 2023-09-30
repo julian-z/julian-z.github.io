@@ -18,17 +18,17 @@
     }
 }
 
-.Introduction {
+.About {
     background-color: white;
     width: 75vw;
     padding: 3vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1vw;
+    gap: 5vh;
 
     border-radius: 0vw 0vw 5vw 5vw;
     border-color: rgb(79, 9, 58);
@@ -37,8 +37,24 @@
     box-shadow: -5px 5px rgb(79, 9, 58);
 }
 
-.Header.intro {
-    background: rgb(0, 187, 252);
+.summary {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    animation: loadAnim ease 2s;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+
+    animation: loadAnim ease 1s;
+}
+
+.Header.about {
+    background: rgb(191, 146, 34);
     width: 75vw;
     padding: 1vh 3vw 1vh 3vw;
 
@@ -53,26 +69,6 @@
     font-weight: 700;
 }
 
-.allText {
-    padding: 2vh;
-    animation: loadAnim ease 1s;
-}
-
-.fullName,
-.nameText,
-.roleText {
-    text-align: right;
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 95%
-}
-.nameText {
-    font-size: 2rem;
-}
-.roleText {
-    font-size: 2.5rem;
-}
-
 @keyframes rotateAnim {
     0% {
         transform: rotate(10deg);
@@ -85,58 +81,31 @@
     }
 }
 
-#pic {
-    height: 30vh;
-    border-radius: 100%;
-    border-color: rgb(79, 9, 58);
-    border-style: solid;
-    border-width: 5px;
-    box-shadow: 0px 0px 1vw rgb(79, 9, 58);
-
-    animation: loadAnim ease 1s;
-    animation: rotateAnim 3s ease-in-out infinite;
-    transition: height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-#pic:hover {
-    height: 35vh;
-    box-shadow: 0px 0px 5vw rgb(79, 9, 58);
-}
-
-.Socials {
+.tech-stack {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
     gap: 2vw;
 
-    animation: loadAnim ease 2s;
+    animation: loadAnim ease 3s;
 }
 
-.social {
-    height: 10vh;
-    border-radius: 100%;
-    transition: opacity 0.2s ease-in-out, border-radius 0.5s;
+.tech {
+    height: 5vh;
+    transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
-.social:hover {
+.tech:hover {
     opacity: 0.5;
-    border-radius: 1vw;
+    height: 7vh;
 }
 
 /* MOBILE DEVICES */
 @media (max-width: 768px) {
-    .fullName,
-    .nameText,
-    .roleText {
-        text-align: center;
-        font-size: 1.25rem;
-    }
-    .fullName {
-        font-size: 2rem;
-    }
-
-    .social {
-        height: 5vh;
+    .quote,
+    .summary {
+        font-size: 0.75rem;
     }
 }
