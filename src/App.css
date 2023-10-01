@@ -37,22 +37,25 @@ button {
   }
 }
 
-#prev,
-#next {
+.prev,
+.next {
   width: 4vw;
   border-radius: 1vw;
   opacity: 0.75;
 
-  animation: loadButtons 5s ease-in-out;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-#next:hover {
+#introButton {
+  animation: loadButtons 5s ease-in-out;
+}
+
+.next:hover {
   transform: translateX(10%);
   opacity: 1;
 }
 
-#prev:hover {
+.prev:hover {
   transform: translateX(-10%);
   opacity: 1;
 }
@@ -71,8 +74,8 @@ button {
 
 /* MOBILE DEVICES */
 @media (max-width: 768px) {
-  #prev,
-  #next {
+  .prev,
+  .next {
     width: 6vw;
   }
 }

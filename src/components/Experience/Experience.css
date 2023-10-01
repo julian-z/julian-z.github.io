@@ -42,7 +42,7 @@
 .experienceBullets {
     text-align: left;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .experienceTitle {
@@ -63,6 +63,7 @@
     height: 15vh;
     border-radius: 100%;
     box-shadow: 0 0 10px rgb(79, 9, 58);
+    background-color: rgb(79, 9, 58);
 
     animation: rotateAnimProj 5s ease-in-out infinite;
     transition: opacity 0.5s ease-in-out;
@@ -91,11 +92,6 @@
     text-align: left;
     color: white;
     font-weight: 700;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
 @keyframes rotateAnimProj {

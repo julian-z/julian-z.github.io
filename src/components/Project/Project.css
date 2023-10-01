@@ -46,6 +46,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
+    margin-bottom: -10px;
 }
 
 .preview {
@@ -95,20 +96,6 @@ a {
     100% {
         transform: rotate(3deg);
     }
-}
-
-/* .tech-row.proj {
-    animation: loadAnim ease 1s;
-} */
-
-.tech {
-    height: 5vh;
-    transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out;
-}
-
-.tech:hover {
-    opacity: 0.5;
-    height: 7vh;
 }
 
 /* MOBILE DEVICES */
