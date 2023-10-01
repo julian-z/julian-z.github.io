@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Introduction from './components/Introduction/Introduction';
 import About from './components/About/About';
@@ -12,6 +12,18 @@ import Prev from './prev.png'
 function App() {
   const [current, setCurrent] = useState(0);
   const numPages = 5;
+  const pageMap = {
+    0: 'Introduction',
+    1: 'About',
+    2: 'QuickYelp',
+    3: 'ZotPlanner',
+    4: 'Minesweeper Lab',
+    5: 'Experience',
+  }
+
+  useEffect(() => {
+    document.title = 'Julian Zulfikar';
+  }, []);
 
   const handleClickNext = () => {
     if (current+1 > numPages) {
@@ -54,7 +66,7 @@ function App() {
             website="https://www.quickyelp.com"
             color={[191, 58, 34]}
             desc="A dynamic AI chatbot which scans the reviews and information of any business on Yelp."
-            bullets={["Incorporated the LangChain framework to create 2 Facebook AI Similarity Search (FAISS) indexes of data from the Yelp Fusion API, streamlining the training process of OpenAI’s GPT-3.5.", 
+            bullets={["Incorporated the LangChain framework to create indexes of data from the Yelp Fusion API, streamlining the training process of OpenAI’s GPT-3.5.", 
                     "Integrated in-memory storage, Redis, for rate limiting, index retrieval, and automatic data expiration.",
                     "Built a functional and responsive user interface using HTML, CSS, JavaScript, and the React framework.",
                     "Successfully handling a growing number of 150+ chat sessions."]}
