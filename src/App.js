@@ -47,7 +47,7 @@ function App() {
   if (current === 2) {
     return (
       <div className="App">
-          <Project title="QuickYelp - AI Chatbot"
+          <Project title="QuickYelp"
             name="quickyelp"
             github="https://github.com/julian-z/quickyelp"
             website="https://www.quickyelp.com"
@@ -69,7 +69,7 @@ function App() {
   if (current === 3) {
     return (
       <div className="App">
-          <Project title="ZotPlanner - UCI Prerequisite Verifier"
+          <Project title="ZotPlanner"
             name="zotplanner"
             github="https://github.com/julian-z/zotplanner"
             website="https://zotplanner.pythonanywhere.com/"
@@ -91,7 +91,7 @@ function App() {
   if (current === 4) {
     return (
       <div className="App">
-          <Project title="Minesweeper Lab - Puzzle Game Trainer"
+          <Project title="Minesweeper Lab"
             name="minesweeperlab"
             github="https://github.com/julian-z/minesweeper-lab"
             website="https://github.com/julian-z/minesweeper-lab"
