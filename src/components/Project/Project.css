@@ -55,7 +55,7 @@ a {
 }
 
 .preview {
-    width: 30vw;
+    height: 30vh;
 
     animation: rotateAnimProj 5s ease-in-out infinite;
     transition: opacity 0.5s ease-in-out;
@@ -95,11 +95,11 @@ a {
     }
 
     .preview {
-        width: 50vw;
+        height: 15vh;
     }
 
     .Project {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .Header {
