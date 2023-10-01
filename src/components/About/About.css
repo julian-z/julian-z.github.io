@@ -1,12 +1,17 @@
-@keyframes loadAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(10%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+.Header.about {
+    background: rgb(191, 146, 34);
+    width: 75vw;
+    padding: 1vh 3vw 1vh 3vw;
+
+    box-shadow: -5px 5px rgb(79, 9, 58);
+    border-radius: 5vw 5vw 0vw 0vw;
+    border-color: rgb(79, 9, 58);
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+
+    text-align: left;
+    color: white;
+    font-weight: 700;
 }
 
 .About {
@@ -28,44 +33,16 @@
     box-shadow: -5px 5px rgb(79, 9, 58);
 }
 
-.summary {
-    text-align: center;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
 .quote {
     text-align: center;
     font-style: italic;
     font-size: 1.5rem;
 }
 
-.Header.about {
-    background: rgb(191, 146, 34);
-    width: 75vw;
-    padding: 1vh 3vw 1vh 3vw;
-
-    box-shadow: -5px 5px rgb(79, 9, 58);
-    border-radius: 5vw 5vw 0vw 0vw;
-    border-color: rgb(79, 9, 58);
-    border-style: solid;
-    border-width: 5px 5px 0px 5px;
-
-    text-align: left;
-    color: white;
-    font-weight: 700;
-}
-
-@keyframes rotateAnim {
-    0% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-10deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
+.summary {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .tech-stack {
@@ -101,6 +78,13 @@
     .quote,
     .summary {
         font-size: 0.75rem;
+    }
+
+    .tech {
+        height: 3vh;
+    }
+    .tech:hover {
+        height: 4vh;
     }
 
     .About {

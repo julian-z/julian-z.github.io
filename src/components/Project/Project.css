@@ -1,63 +1,13 @@
-@keyframes loadAnim {
+@keyframes rotateAnimProj {
     0% {
-        opacity: 0;
-        transform: translateY(10%);
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0%);
+        transform: rotate(3deg);
     }
-}
-
-.Project {
-    background-color: white;
-    width: 75vw;
-    padding: 3vw;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-
-    border-radius: 0vw 0vw 5vw 5vw;
-    border-color: rgb(79, 9, 58);
-    border-style: solid;
-    border-width: 5px;
-    box-shadow: -5px 5px rgb(79, 9, 58);
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1vh;
-}
-
-.bullets {
-    text-align: left;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.desc {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: -10px;
-}
-
-.preview {
-    width: 30vw;
-
-    animation: rotateAnimProj 5s ease-in-out infinite;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.preview:hover {
-    opacity: 0.5;
 }
 
 .Header.project {
@@ -86,27 +36,59 @@ a {
     color: white;
 }
 
-@keyframes rotateAnimProj {
-    0% {
-        transform: rotate(3deg);
-    }
-    50% {
-        transform: rotate(-3deg);
-    }
-    100% {
-        transform: rotate(3deg);
-    }
+.Project {
+    background-color: white;
+    width: 75vw;
+    padding: 3vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    border-radius: 0vw 0vw 5vw 5vw;
+    border-color: rgb(79, 9, 58);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: -5px 5px rgb(79, 9, 58);
+}
+
+.preview {
+    width: 30vw;
+
+    animation: rotateAnimProj 5s ease-in-out infinite;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.preview:hover {
+    opacity: 0.5;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.desc {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: -10px;
+}
+
+.bullets {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* MOBILE DEVICES */
 @media (max-width: 768px) {
-    .tech {
-        height: 3vh;
-    }
-    .tech:hover {
-        height: 4vh;
-    }
-
     .desc,
     .bullets {
         font-size: 0.75rem;
