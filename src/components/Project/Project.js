@@ -7,6 +7,8 @@ import css from './css.png';
 import react from './react.png';
 import sql from './sql.png';
 import quickyelp from './quickyelp.png';
+import zotplanner from './zotplanner.png';
+import minesweeperlab from './minesweeperlab.png';
 
 function Project(props) {
     const stackLogos = {
@@ -21,6 +23,8 @@ function Project(props) {
 
     const projectLogos = {
         'quickyelp': <a href={props.website} target="_blank"><img src={quickyelp} className='preview' alt='QuickYelp'></img></a>,
+        'zotplanner': <a href={props.website} target="_blank"><img src={zotplanner} className='preview' alt='ZotPlanner'></img></a>,
+        'minesweeperlab': <a href={props.website} target="_blank"><img src={minesweeperlab} className='preview' alt='Minesweeper Lab'></img></a>,
     }
     return (
         <div className="container">
