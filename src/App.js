@@ -1,4 +1,5 @@
 import './App.css';
+import './NavigationBar.css';
 import React, {useState, useEffect} from 'react';
 
 import Introduction from './components/Introduction/Introduction';
@@ -8,34 +9,45 @@ import Experience from './components/Experience/Experience';
 
 import Next from './next.png'
 import Prev from './prev.png'
+import logo from './logo-black.png';
 
 function App() {
   const [current, setCurrent] = useState(0);
-  const numPages = 5;
-  const pageMap = {
-    0: 'Introduction',
-    1: 'About',
-    2: 'QuickYelp',
-    3: 'ZotPlanner',
-    4: 'Minesweeper Lab',
-    5: 'Experience',
-  }
 
   useEffect(() => {
     document.title = 'Julian Zulfikar';
   }, []);
 
   const handleClickNext = () => {
-    if (current+1 > numPages) {
-      setCurrent(0);
-    }
-    else {
-      setCurrent(current+1);
-    }
+    setCurrent(current+1);
   }
 
   const handleClickPrev = () => {
     setCurrent(current-1);
+  }
+
+  const createNavBar = (currentPage) => {
+    const pages = [
+      <button onClick={() => setCurrent(0)}>Introduction</button>,
+      <button onClick={() => setCurrent(1)}>About</button>,
+      <button onClick={() => setCurrent(2)}>Projects</button>,
+      <button onClick={() => setCurrent(5)}>Experience</button>
+    ];
+    
+    if (currentPage === 0) {
+        pages[0] = <button onClick={() => setCurrent(0)} style={{opacity: '0.5'}}>Introduction</button>;
+    }
+    else if (currentPage === 1) {
+        pages[1] = <button onClick={() => setCurrent(1)} style={{opacity: '0.5'}}>About</button>;
+    }
+    else if (currentPage === 5) {
+        pages[3] = <button onClick={() => setCurrent(5)} style={{opacity: '0.5'}}>Experience</button>;
+    }
+    else {
+        pages[2] = <button onClick={() => setCurrent(2)} style={{opacity: '0.5'}}>Projects</button>;
+    }
+    
+    return pages;
   }
 
   if (current === 0) {
@@ -43,6 +55,14 @@ function App() {
       <div className="App">
           <Introduction title="Introduction"></Introduction>
           <button onClick={handleClickNext}><img src={Next} alt="Next" className="next" id="introButton"></img></button>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
+          </div>
       </div>
     );
   }
@@ -53,6 +73,14 @@ function App() {
           <div className="Navigation">
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" className="prev"></img></button>
             <button onClick={handleClickNext}><img src={Next} alt="Next" className="next"></img></button>
+          </div>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
           </div>
       </div>
     );
@@ -76,6 +104,14 @@ function App() {
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" className="prev"></img></button>
             <button onClick={handleClickNext}><img src={Next} alt="Next" className="next"></img></button>
           </div>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
+          </div>
       </div>
     );
   }
@@ -96,6 +132,14 @@ function App() {
           <div className="Navigation">
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" className="prev"></img></button>
             <button onClick={handleClickNext}><img src={Next} alt="Next" className="next"></img></button>
+          </div>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
           </div>
       </div>
     );
@@ -118,6 +162,14 @@ function App() {
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" className="prev"></img></button>
             <button onClick={handleClickNext}><img src={Next} alt="Next" className="next"></img></button>
           </div>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
+          </div>
       </div>
     );
   }
@@ -126,6 +178,14 @@ function App() {
       <div className="App">
           <Experience></Experience>
           <button onClick={handleClickPrev}><img src={Prev} alt="Previous" className="prev"></img></button>
+
+          <div className="NavigationBar">
+            <img src={logo} alt="JZ" id="JZ"></img>
+
+            <div className="NavigationOptions">
+                {createNavBar(current)}
+            </div>
+          </div>
       </div>
     );
   }

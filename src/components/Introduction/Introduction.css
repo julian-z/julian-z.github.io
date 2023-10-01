@@ -104,7 +104,7 @@
 }
 
 .fullName {
-    transition: text-shadow ease-in-out 0.5s, color ease-in-out 0.5s;
+    transition: text-shadow ease-in-out 0.2s, color ease-in-out 0.2s;
 }
 
 .fullName:hover {
@@ -143,7 +143,7 @@
 .social {
     height: 10vh;
     border-radius: 100%;
-    transition: opacity 0.2s ease-in-out, border-radius 0.5s;
+    transition: opacity 0.2s ease-in-out, border-radius 0.2s;
 }
 
 .social:hover {
