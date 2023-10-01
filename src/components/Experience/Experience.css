@@ -49,7 +49,14 @@
     text-align: left;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 0;
+}
+
+.experienceCompany {
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: -10px;
 }
 
 .experiencePic {
@@ -139,7 +146,12 @@ a {
     }
 
     .experienceTitle,
+    .experienceCompany,
     .experienceBullets {
         font-size: 0.5rem;
+    }
+
+    .experienceCompany {
+        margin-bottom: -5px;
     }
 }

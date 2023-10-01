@@ -13,7 +13,10 @@ function Experience() {
                     <img src={UCI} alt="UCI" className="experiencePic"></img>
                     <div>
                         <div className="experienceTitle">
-                            Python Learning Assistant (ICS 31)
+                            Python Learning Assistant
+                        </div>
+                        <div className="experienceCompany">
+                            University of California, Irvine
                         </div>
                         <div className="experienceBullets">
                             <ul id="experienceUL">
@@ -28,7 +31,10 @@ function Experience() {
                     <img src={ZotMe} alt="ZotMe" className="experiencePic"></img>
                     <div>
                         <div className="experienceTitle">
-                            UCI Mental Health Hackathon (UI Design)
+                            User Interface Designer
+                        </div>
+                        <div className="experienceCompany">
+                            UCI Mental Health Hackathon - ZotMe
                         </div>
                         <div className="experienceBullets">
                             <ul id="experienceUL">
