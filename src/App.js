@@ -4,13 +4,14 @@ import React, {useState} from 'react';
 import Introduction from './components/Introduction/Introduction';
 import About from './components/About/About';
 import Project from './components/Project/Project';
+import Experience from './components/Experience/Experience';
 
 import Next from './next.png'
 import Prev from './prev.png'
 
 function App() {
   const [current, setCurrent] = useState(0);
-  const numPages = 4;
+  const numPages = 5;
 
   const handleClickNext = () => {
     if (current+1 > numPages) {
@@ -57,7 +58,7 @@ function App() {
                     "Enhanced user session security by integrating in-memory storage, Redis, for rate limiting, index retrieval, and automatic data expiration, ultimately allowing for the support of up to 40 businesses concurrently.",
                     "Built a functional and responsive user interface using HTML, CSS, JavaScript, and the React framework.",
                     "Successfully handling a growing number of 150+ chat sessions."]}
-            stack={['python', 'javascript', 'html', 'css', 'react']}>
+            stack={['python', 'html', 'css', 'javascript', 'react']}>
           </Project>
           <div className="Navigation">
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" id="prev"></img></button>
@@ -77,8 +78,7 @@ function App() {
             desc="A UCI course graph generator which warns users about prerequisites."
             bullets={["Implemented a web-crawler to extract and categorize data from 6,000+ courses.",
                     "Enabled the construction of an inverted index, drastically reducing the runtime by 99% due to instantaneous retrieval operations.",
-                    "Leveraged the tokenization abilities of the Natural Language Toolkit (NLTK) in tandem with TF-IDF scoring to accurately rank queries, constructing an optimized UCI course search engine with an average response time of 152 ms.",
-                    "Created a website implementation using HTML/CSS, and the Flask framework for user accessibility."]}
+                    "Leveraged the tokenization abilities of the Natural Language Toolkit (NLTK) in tandem with TF-IDF scoring to accurately rank queries, constructing an optimized UCI course search engine with an average response time of 152 ms."]}
             stack={['python', 'html', 'css']}>
           </Project>
           <div className="Navigation">
@@ -106,6 +106,14 @@ function App() {
             <button onClick={handleClickPrev}><img src={Prev} alt="Previous" id="prev"></img></button>
             <button onClick={handleClickNext}><img src={Next} alt="Next" id="next"></img></button>
           </div>
+      </div>
+    );
+  }
+  if (current === 5) {
+    return (
+      <div className="App">
+          <Experience></Experience>
+          <button onClick={handleClickPrev}><img src={Prev} alt="Previous" id="prev"></img></button>
       </div>
     );
   }

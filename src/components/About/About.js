@@ -21,9 +21,9 @@ function About(props) {
                         <img src={sql} className='tech' alt='SQL'></img>
                     </div>
                     <div className="tech-row">
-                        <img src={javascript} className='tech' alt='JavaScript'></img>
                         <img src={html} className='tech' alt='HTML'></img>
                         <img src={css} className='tech' alt='CSS'></img>
+                        <img src={javascript} className='tech' alt='JavaScript'></img>
                         <img src={react} className='tech' alt='React'></img>
                     </div>
                 </div>
@@ -44,6 +44,7 @@ function About(props) {
                     in society. I am always looking to develop projects that will assist the daily lives of individuals, as I am
                     extremely passionate about using my skillset for good. I will forever enjoy learning, creating, and problem-solving.
                 </div>
+
             </div>
         </div>
     )

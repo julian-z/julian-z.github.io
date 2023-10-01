@@ -4,7 +4,23 @@
     justify-content: center;
     align-items: normal;
 
-    animation: loadAnim ease 1s;
+    /* animation: loadAnim ease-in-out 1s;
+    animation: floatingAnim ease-in-out 5s infinite; */
+    animation: loadAnim ease-in-out, floatingAnim ease-in-out infinite;
+    animation-duration: 2s, 5s;
+    animation-delay: 0s, 2s;
+}
+
+@keyframes floatingAnim {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 @keyframes loadAnim {

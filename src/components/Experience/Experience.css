@@ -9,16 +9,16 @@
     }
 }
 
-.Project {
+.Experience {
     background-color: white;
     width: 75vw;
     padding: 3vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    gap: 2vh;
 
     border-radius: 0vw 0vw 5vw 5vw;
     border-color: rgb(79, 9, 58);
@@ -27,40 +27,46 @@
     box-shadow: -5px 5px rgb(79, 9, 58);
 }
 
-.description {
+.section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1vh;
+    gap: 5vw;
 }
 
-.bullets {
+#experienceUL {
+    padding: 0px;
+}
+
+.experienceBullets {
     text-align: left;
     font-weight: 500;
     font-size: 1rem;
 }
 
-.desc {
-    text-align: center;
+.experienceTitle {
+    text-align: left;
     font-weight: 700;
     font-size: 1rem;
+    line-height: 0;
 }
 
-.preview {
-    width: 30vw;
+.experiencePic {
+    height: 15vh;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgb(79, 9, 58);
 
     animation: rotateAnimProj 5s ease-in-out infinite;
     transition: opacity 0.5s ease-in-out;
 }
 
-.preview:hover {
+.experiencePic:hover {
     opacity: 0.5;
 }
 
-.Header.project {
-    background: rgb(191, 58, 34);
+.Header.experience {
+    background: rgb(34, 133, 191);
     width: 75vw;
     padding: 1vh 3vw 1vh 3vw;
 
@@ -120,11 +126,6 @@ a {
         height: 4vh;
     }
 
-    .desc,
-    .bullets {
-        font-size: 0.75rem;
-    }
-
     .preview {
         width: 50vw;
     }
@@ -135,5 +136,10 @@ a {
 
     .Header {
         font-size: 0.75rem;
+    }
+
+    .experienceTitle,
+    .experienceBullets {
+        font-size: 0.5rem;
     }
 }

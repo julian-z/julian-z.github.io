@@ -1,12 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: normal;
-
-    animation: loadAnim ease 1s;
-}
-
 @keyframes loadAnim {
     0% {
         opacity: 0;
@@ -41,8 +32,6 @@
     text-align: center;
     font-weight: 500;
     font-size: 1rem;
-
-    animation: loadAnim ease 3s;
 }
 
 .quote {
