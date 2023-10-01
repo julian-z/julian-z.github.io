@@ -75,10 +75,10 @@ function App() {
             github="https://github.com/julian-z/zotplanner"
             website="https://zotplanner.pythonanywhere.com/"
             color={[22, 173, 97]}
-            desc="A UCI course graph generator which warns users about prerequisites."
+            desc="A UCI course search engine and graph generator which warns users about prerequisites."
             bullets={["Implemented a web-crawler to extract and categorize data from 6,000+ courses.",
                     "Enabled the construction of an inverted index, drastically reducing the runtime by 99% due to instantaneous retrieval operations.",
-                    "Leveraged the tokenization abilities of the Natural Language Toolkit (NLTK) in tandem with TF-IDF scoring to accurately rank queries, constructing an optimized UCI course search engine with an average response time of 152 ms."]}
+                    "Leveraged the tokenization abilities of the Natural Language Toolkit (NLTK) in tandem with TF-IDF scoring to accurately rank queries."]}
             stack={['python', 'html', 'css']}>
           </Project>
           <div className="Navigation">
