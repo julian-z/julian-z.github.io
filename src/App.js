@@ -10,6 +10,7 @@ import Experience from './components/Experience/Experience';
 import Next from './next.png'
 import Prev from './prev.png'
 import logo from './logo-black.png';
+import dropdown from './dropdown.png';
 
 function App() {
   const [current, setCurrent] = useState(0);
@@ -26,7 +27,7 @@ function App() {
     setCurrent(current-1);
   }
 
-  const createNavBar = (currentPage) => {
+  const createNavBar = (currentPage, opacity) => {
     const pages = [
       <button onClick={() => setCurrent(0)}>Introduction</button>,
       <button onClick={() => setCurrent(1)}>About</button>,
@@ -35,16 +36,16 @@ function App() {
     ];
     
     if (currentPage === 0) {
-        pages[0] = <button onClick={() => setCurrent(0)} style={{opacity: '0.5'}}>Introduction</button>;
+        pages[0] = <button onClick={() => setCurrent(0)} style={{opacity: opacity}}>Introduction</button>;
     }
     else if (currentPage === 1) {
-        pages[1] = <button onClick={() => setCurrent(1)} style={{opacity: '0.5'}}>About</button>;
+        pages[1] = <button onClick={() => setCurrent(1)} style={{opacity: opacity}}>About</button>;
     }
     else if (currentPage === 5) {
-        pages[3] = <button onClick={() => setCurrent(5)} style={{opacity: '0.5'}}>Experience</button>;
+        pages[3] = <button onClick={() => setCurrent(5)} style={{opacity: opacity}}>Experience</button>;
     }
     else {
-        pages[2] = <button onClick={() => setCurrent(2)} style={{opacity: '0.5'}}>Projects</button>;
+        pages[2] = <button onClick={() => setCurrent(2)} style={{opacity: opacity}}>Projects</button>;
     }
     
     return pages;
@@ -60,7 +61,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
@@ -79,7 +87,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
@@ -88,7 +103,7 @@ function App() {
   if (current === 2) {
     return (
       <div className="App">
-          <Project title="QuickYelp"
+          <Project title="(1/3) QuickYelp"
             name="quickyelp"
             github="https://github.com/julian-z/quickyelp"
             website="https://www.quickyelp.com"
@@ -109,7 +124,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
@@ -118,7 +140,7 @@ function App() {
   if (current === 3) {
     return (
       <div className="App">
-          <Project title="ZotPlanner"
+          <Project title="(2/3) ZotPlanner"
             name="zotplanner"
             github="https://github.com/julian-z/zotplanner"
             website="https://zotplanner.pythonanywhere.com/"
@@ -138,7 +160,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
@@ -147,10 +176,10 @@ function App() {
   if (current === 4) {
     return (
       <div className="App">
-          <Project title="Minesweeper Lab"
+          <Project title="(3/3) Minesweeper Lab"
             name="minesweeperlab"
             github="https://github.com/julian-z/minesweeper-lab"
-            website="https://github.com/julian-z/minesweeper-lab"
+            website="https://www.youtube.com/watch?v=Fi9VODiHQNg"
             color={[89, 108, 196]}
             desc="A spin-off Minesweeper game designed to train the puzzle-solving abilities of players."
             bullets={["Designed a schema for the creation of a relational database using the SQLite API, providing a means of progression tracking and a competitive environment for local players.",
@@ -167,7 +196,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
@@ -183,7 +219,14 @@ function App() {
             <img src={logo} alt="JZ" id="JZ"></img>
 
             <div className="NavigationOptions">
-                {createNavBar(current)}
+                {createNavBar(current, '0.5')}
+            </div>
+
+            <div className="NavigationDropdown">
+              <button><img src={dropdown} alt="Menu"></img></button>
+              <div className="DropdownContent">
+                {createNavBar(current, '1')}
+              </div>
             </div>
           </div>
       </div>
