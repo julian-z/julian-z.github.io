@@ -1,3 +1,12 @@
+@keyframes loadButtons {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 0.75;
+  }
+}
+
 .App {
   height: 100vh;
   width: 100vw;
@@ -28,15 +37,6 @@ button {
   border-width: 0px;
 }
 
-@keyframes loadButtons {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 0.75;
-  }
-}
-
 .prev,
 .next {
   width: 4vw;
@@ -58,18 +58,6 @@ button {
 .prev:hover {
   transform: translateX(-10%);
   opacity: 1;
-}
-
-@keyframes fading {
-  0% {
-    opacity: 0.75;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 0.75;
-  }
 }
 
 /* MOBILE DEVICES */
