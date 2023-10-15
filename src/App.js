@@ -109,7 +109,7 @@ function App() {
             website="https://www.quickyelp.com"
             color={[191, 58, 34]}
             desc="A dynamic AI chatbot which scans the reviews and information of any business on Yelp."
-            bullets={["Incorporated the LangChain framework to create indexes of data from the Yelp Fusion API, streamlining the training process of OpenAI’s GPT-3.5.", 
+            bullets={["Incorporated the LangChain framework to create indexes of data from the Yelp Fusion API, streamlining the training process of OpenAI’s GPT-4.", 
                     "Integrated in-memory storage, Redis, for rate limiting, index retrieval, and automatic data expiration.",
                     "Built a functional and responsive user interface using HTML, CSS, JavaScript, and the React framework.",
                     "Successfully handling a growing number of 150+ chat sessions."]}
