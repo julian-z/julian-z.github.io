@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a40ee9b3.css",
-    "main.js": "/static/js/main.7bd2716c.js",
+    "main.css": "/static/css/main.808de233.css",
+    "main.js": "/static/js/main.6ea07cc0.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/uci.png": "/static/media/uci.ff1b5d0d34982bef207e.png",
     "static/media/IMG_0186.jpg": "/static/media/IMG_0186.7d22a5491cb7521bca1d.jpg",
-    "static/media/minesweeperlab.png": "/static/media/minesweeperlab.ef7209a1b811b8786e3d.png",
+    "static/media/minesweeperlab.png": "/static/media/minesweeperlab.e2a0a69c6aed4e22d4a0.png",
+    "static/media/zotplanner.png": "/static/media/zotplanner.db59e875696490d781a4.png",
     "static/media/ZotMe.png": "/static/media/ZotMe.ec7e1097fb9207c0a900.png",
-    "static/media/quickyelp.png": "/static/media/quickyelp.a2ebff1b1d4d7daecccb.png",
-    "static/media/zotplanner.png": "/static/media/zotplanner.5f0f5cd6bca2dd4e8cf1.png",
+    "static/media/gbcs.png": "/static/media/gbcs.0d028240982dde718bbc.png",
+    "static/media/quickyelp.png": "/static/media/quickyelp.d028604bda576926b515.png",
+    "static/media/cisco.png": "/static/media/cisco.00ae5f1fd0caddc0417f.png",
     "static/media/sql.png": "/static/media/sql.9f20b76888b53f1ecf59.png",
     "static/media/python.png": "/static/media/python.9e24bebd431d5c64835b.png",
     "static/media/react.png": "/static/media/react.595f6093dc6afd4b8fa3.png",
@@ -22,12 +24,12 @@
     "static/media/mail.png": "/static/media/mail.015abfaafdefd48a78c7.png",
     "static/media/logo-black.png": "/static/media/logo-black.16ec72e6ac73300d3f34.png",
     "index.html": "/index.html",
-    "main.a40ee9b3.css.map": "/static/css/main.a40ee9b3.css.map",
-    "main.7bd2716c.js.map": "/static/js/main.7bd2716c.js.map",
+    "main.808de233.css.map": "/static/css/main.808de233.css.map",
+    "main.6ea07cc0.js.map": "/static/js/main.6ea07cc0.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a40ee9b3.css",
-    "static/js/main.7bd2716c.js"
+    "static/css/main.808de233.css",
+    "static/js/main.6ea07cc0.js"
   ]
 }
