@@ -1,5 +1,5 @@
 .Header.experience {
-    background: rgb(34, 133, 191);
+    background: rgb(0, 0, 0);
     width: 75vw;
     padding: 1vh 3vw 1vh 3vw;
 
@@ -8,9 +8,9 @@
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: -5px 5px rgb(79, 9, 58);
+    box-shadow: -5px 5px rgb(0, 0, 0);
     border-radius: 5vw 5vw 0vw 0vw;
-    border-color: rgb(79, 9, 58);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 5px 5px 0px 5px;
 
@@ -31,17 +31,17 @@
     gap: 2vh;
 
     border-radius: 0vw 0vw 5vw 5vw;
-    border-color: rgb(79, 9, 58);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 5px;
-    box-shadow: -5px 5px rgb(79, 9, 58);
+    box-shadow: -5px 5px rgb(0, 0, 0);
 }
 
 .experiencePic {
-    height: 15vh;
+    height: 10vh;
     border-radius: 100%;
-    box-shadow: 0 0 10px rgb(79, 9, 58);
-    background-color: rgb(79, 9, 58);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
 
     animation: rotateAnimProj 5s ease-in-out infinite;
     transition: opacity 0.5s ease-in-out;

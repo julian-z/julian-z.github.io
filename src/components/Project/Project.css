@@ -11,7 +11,7 @@
 }
 
 .Header.project {
-    background: rgb(191, 58, 34);
+    background: rgb(0, 0, 0);
     width: 75vw;
     padding: 1vh 3vw 1vh 3vw;
 
@@ -20,9 +20,9 @@
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: -5px 5px rgb(79, 9, 58);
+    box-shadow: -5px 5px rgb(0, 0, 0);
     border-radius: 5vw 5vw 0vw 0vw;
-    border-color: rgb(79, 9, 58);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 5px 5px 0px 5px;
 
@@ -48,10 +48,10 @@ a {
     flex-wrap: nowrap;
 
     border-radius: 0vw 0vw 5vw 5vw;
-    border-color: rgb(79, 9, 58);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 5px;
-    box-shadow: -5px 5px rgb(79, 9, 58);
+    box-shadow: -5px 5px rgb(0, 0, 0);
 }
 
 .preview {
